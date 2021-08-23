@@ -401,8 +401,6 @@ choose one of these:
 # Credits
 
 Thanks to:
-<details>
-    <summary><b>Click here for more details</b></summary>
     
 - @out386 heavily inspired from Telegram Bot which is written in JS
 - @lzzy12 for original repo
@@ -413,7 +411,5 @@ Thanks to:
 - @breakdowns for slam-aria-mirror-bot
 - @zevtyardt for some direct links
 - @vincreator for this
-
-</details>
 
 And many more people who aren't mentioned here, but may be found in [Contributors](https://github.com/mrclfd/euismirrorbot/graphs/contributors).
