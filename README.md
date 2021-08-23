@@ -1,4 +1,4 @@
-[![Euis](https://telegra.ph/file/4e56effcd650aae470e7a.jpg)](https://www.instagram.com/p/CL_LzBwjcdy/)
+[![Euis](https://telegra.ph/file/4e56effcd650aae470e7a.jpg)](https://www.instagram.com/p/CL_LzBwjcdy/){:target="_blank"}
 
 # Euis Mirror Bot
 ![GitHub Repo stars](https://img.shields.io/github/stars/mrclfd/euismirrorbot?color=blue&style=flat)
