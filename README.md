@@ -402,14 +402,14 @@ choose one of these:
 
 Thanks to:
     
-- @out386 heavily inspired from Telegram Bot which is written in JS
-- @lzzy12 for original repo
-- @Dank-del for base repo
-- @magneto261290 for some features
-- @SVR666 for some features & fixes
-- @anasty17 for some features & help
-- @breakdowns for slam-aria-mirror-bot
-- @zevtyardt for some direct links
-- @vincreator for this
+@out386 heavily inspired from Telegram Bot which is written in JS
+@lzzy12 for original repo
+@Dank-del for base repo
+@magneto261290 for some features
+@SVR666 for some features & fixes
+@anasty17 for some features & help
+@breakdowns for slam-aria-mirror-bot
+@zevtyardt for some direct links
+@vincreator for this
 
 And many more people who aren't mentioned here, but may be found in [Contributors](https://github.com/mrclfd/euismirrorbot/graphs/contributors).
