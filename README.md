@@ -219,7 +219,7 @@ Three buttons are already added of Drive Link, Index Link, and View Link, you ca
 - Finally, run the script to generate **token.pickle** file for Google Drive:
 ```
 $ pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
-python3 generate_drive_token.py
+$ python3 generate_drive_token.py
 ```
 </details>
 
