@@ -1,19 +1,13 @@
-[![Betterme](https://telegra.ph/file/044017033ca7028c9fc85.jpg)](https://youtu.be/s2TktuIA9-s)
+[![Euis](https://telegra.ph/file/4e56effcd650aae470e7a.jpg)](https://www.instagram.com/p/CL_LzBwjcdy/)
 
-# Eunha Mirror
-![GitHub Repo stars](https://img.shields.io/github/stars/vincreator/eunhamirror?color=blue&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/vincreator/eunhamirror?color=green&style=flat)
-![GitHub issues](https://img.shields.io/github/issues/vincreator/eunhamirror)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/vincreator/eunhamirror)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/vincreator/eunhamirror)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/vincreator/eunhamirror)
-![GitHub contributors](https://img.shields.io/github/contributors/vincreator/eunhamirror?style=flat)
-![GitHub repo size](https://img.shields.io/github/repo-size/vincreator/eunhamirror?color=red)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/vincreator/eunhamirror)
-![GitHub](https://img.shields.io/github/license/vincreator/eunhamirror)
-[![Channel](https://img.shields.io/badge/Channel-blue)](https://t.me/Namexian)
+# Euis Mirror Bot
+![GitHub Repo stars](https://img.shields.io/github/stars/mrclfd/euismirrorbot?color=blue&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/mrclfd/euismirrorbot?color=green&style=flat)
+![GitHub contributors](https://img.shields.io/github/contributors/mrclfd/euismirrorbot?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/mrclfd/euismirrorbot?color=red)
+[![Channel](https://img.shields.io/badge/Channel-blue)](https://t.me/melekmoto)
 
-**Eunha Mirror** is a _multipurpose_ Telegram Bot writen in Python for mirroring files on the Internet to our beloved Google Drive.
+**Euis Mirror Bot** is a _multipurpose_ Telegram Bot writen in Python for mirroring files on the Internet to our beloved Google Drive.
 
 # Features supported:
 <details>
@@ -96,24 +90,24 @@ Deploying is pretty much straight forward and is divided into several steps as f
 
 - Clone this repo:
 ```
-git clone https://github.com/vincreator/eunha/
-cd mirrorbot
+$ git clone https://github.com/mrclfd/euismirrorbot mirrorbot/
+$ cd mirrorbot
 ```
 
 - Install requirements
 For Debian based distros
 ```
-sudo apt install python3
+$ sudo apt install python3
 ```
 Install Docker by following the [official Docker docs](https://docs.docker.com/engine/install/debian/)
 
 - For Arch and it's derivatives:
 ```
-sudo pacman -S docker python
+$ sudo pacman -S docker python
 ```
 - Install dependencies for running setup scripts:
 ```
-pip3 install -r requirements-cli.txt
+$ pip3 install -r requirements-cli.txt
 ```
 </details>
 
@@ -160,16 +154,16 @@ Fill up rest of the fields. Meaning of each fields are discussed below:
 - **DOWNLOAD_DIR**: The path to the local folder where the downloads should be downloaded to
 - **DOWNLOAD_STATUS_UPDATE_INTERVAL**: A short interval of time in seconds after which the Mirror progress message is updated. (I recommend to keep it `5` seconds at least)  
 - **AUTO_DELETE_MESSAGE_DURATION**: Interval of time (in seconds), after which the bot deletes it's message (and command message) which is expected to be viewed instantly. (**Note**: Set to `-1` to never automatically delete messages)
-- **UPSTREAM_REPO**: Link for Bot Upstream Repo, if you want default update, fill `https://github.com/vincreator/Eunha-Mirror-bot`.
+- **UPSTREAM_REPO**: Link for Bot Upstream Repo, if you want default update, fill `https://github.com/mrclfd/euismirrorbot`.
 - **UPSTREAM_BRANCH**: Branch name for Bot Upstream Repo, fill `master`.
 ### Optional Field
 - **ACCOUNTS_ZIP_URL**: Only if you want to load your Service Account externally from an Index Link. Archive your Service Account json files to a zip file directly (don't archive the accounts folder. Select all the jsons inside and zip them only instead. Name the zip file with whatever you want, it doesn't matter). Fill this with the direct link of that file.
 - **TOKEN_PICKLE_URL**: Only if you want to load your **token.pickle** externally from an Index Link. Fill this with the direct link of that file.
-- **DATABASE_URL**: Your Database URL. See [Generate Database](https://github.com/vincreator/eunhamirror/tree/master#generate-database) to generate database (**NOTE**: If you use database you can save your sudo id permanent using `/addsudo` command).
+- **DATABASE_URL**: Your Database URL. See [Generate Database](https://github.com/mrclfd/euismirrorbot/tree/master#generate-database) to generate database (**NOTE**: If you use database you can save your sudo id permanent using `/addsudo` command).
 - **AUTHORIZED_CHATS**: Fill user_id and chat_id (not username) of you want to authorize, Seprate them with space, Examples: `-0123456789 -1122334455 6915401739`.
 - **SUDO_USERS**: Fill user_id (not username) of you want to sudoers, Seprate them with space, Examples: `0123456789 1122334455 6915401739` (**NOTE**: If you want save sudo id permanent without database, you must fill your sudo id there).
 - **IS_TEAM_DRIVE**: Set to `True` if `GDRIVE_FOLDER_ID` is from a Team Drive else `False` or Leave it empty.
-- **USE_SERVICE_ACCOUNTS**: (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using Service Accounts](https://github.com/vincreator/eunhamirror#generate-service-accounts-what-is-service-account) section below.
+- **USE_SERVICE_ACCOUNTS**: (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using Service Accounts](https://github.com/mrclfd/euismirrorbot#generate-service-accounts-what-is-service-account) section below.
 - **INDEX_URL**: Refer to https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index The URL should not have any trailing '/'
 - **MEGA_API_KEY**: Mega.nz api key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
 - **MEGA_EMAIL_ID**: Your email id you used to sign up on mega.nz for using premium accounts (Leave th)
@@ -220,12 +214,12 @@ Three buttons are already added of Drive Link, Index Link, and View Link, you ca
 - Go to the Credentials tab and click Create Credentials -> OAuth Client ID
 - Choose Desktop and Create.
 - Use the download button to download your credentials.
-- Move that file to the root of Eunhabot, and rename it to **credentials.json**
+- Move that file to the root of mirrorbot, and rename it to **credentials.json**
 - Visit [Google API page](https://console.developers.google.com/apis/library)
 - Search for Drive and enable it if it is disabled
 - Finally, run the script to generate **token.pickle** file for Google Drive:
 ```
-pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+$ pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 python3 generate_drive_token.py
 ```
 </details>
@@ -236,15 +230,15 @@ python3 generate_drive_token.py
 
 - Start Docker daemon (skip if already running):
 ```
-sudo dockerd
+$ sudo dockerd
 ```
 - Build Docker image:
 ```
-docker build . --rm --force-rm --compress --no-cache=true --pull --file Dockerfile -t mirrorbot
+$ docker build . --rm --force-rm --compress --no-cache=true --pull --file Dockerfile -t mirrorbot
 ```
 - Run the image:
 ```
-sudo docker run mirrorbot
+$ sudo docker run mirrorbot
 ```
 </details>
 
@@ -254,7 +248,7 @@ sudo docker run mirrorbot
 
 ## Pre-requisites
 
-- [token.pickle](https://github.com/vincreator/eunhamirror#getting-google-oauth-api-credential-file)
+- [token.pickle](https://github.com/mrclfd/euismirrorbot#getting-google-oauth-api-credential-file)
 - [Heroku](heroku.com) accounts
 - Recommended to use 1 App in 1 Heroku account
 - Don't use bin/fake credits card, because your Heroku account will get banned.
@@ -272,7 +266,7 @@ sudo docker run mirrorbot
 	* `HEROKU_EMAIL` Heroku Account Email Id in which the above app will be deployed
 	* `HEROKU_API_KEY` Your Heroku API key, get it from https://dashboard.heroku.com/account
 	* `HEROKU_APP_NAME` Your Heroku app name, Name Must be unique
-	* `CONFIG_FILE_URL` Fill [This](https://raw.githubusercontent.com/vincreator/eunhamirror/master/config_sample.env) in any text editor, and remove the second line. Go to https://gist.github.com and paste your config data from the previous step. Rename the file to config.env and upload it. Click on Raw, copy the link and that's your CONFIG_FILE_URL. Refer to below images for clarity. 
+	* `CONFIG_FILE_URL` Fill [This](https://raw.githubusercontent.com/mrclfd/euismirrorbot/master/config_sample.env) in any text editor, and remove the second line. Go to https://gist.github.com and paste your config data from the previous step. Rename the file to config.env and upload it. Click on Raw, copy the link and that's your CONFIG_FILE_URL. Refer to below images for clarity. 
 
 	![steps 1 to 3](https://telegra.ph/file/1d8fec16516a87ba9d1ac.jpg)
 
@@ -318,7 +312,7 @@ Let us create only the Service Accounts that we need.
 
 **NOTE:** 1 Service Account can copy around 750gb a day, 1 project can make 100 Service Accounts so that's 75tb a day, for most users this should easily suffice.
 ```
-python3 gen_sa_accounts.py --quick-setup 1 --new-only
+$ python3 gen_sa_accounts.py --quick-setup 1 --new-only
 ```
 A folder named accounts will be created which will contain keys for the Service Accounts.
 
@@ -326,39 +320,39 @@ Or you can create Service Accounts to current project, no need to create new one
 
 - List your projects ids
 ```
-python3 gen_sa_accounts.py --list-projects
+$ python3 gen_sa_accounts.py --list-projects
 ```
 - Enable services automatically by this command
 ```
-python3 gen_sa_accounts.py --enable-services $PROJECTID
+$ python3 gen_sa_accounts.py --enable-services $PROJECTID
 ```
 - Create Sevice Accounts to current project
 ```
-python3 gen_sa_accounts.py --create-sas $PROJECTID
+$ python3 gen_sa_accounts.py --create-sas $PROJECTID
 ```
 - Download Sevice Accounts as accounts folder
 ```
-python3 gen_sa_accounts.py --download-keys $PROJECTID
+$ python3 gen_sa_accounts.py --download-keys $PROJECTID
 ```
 If you want to add Service Accounts to Google Group, follow these steps
 
 - Mount accounts folder
 ```
-cd accounts
+$ cd accounts
 ```
 - Grab emails form all accounts to emails.txt file that would be created in accounts folder
 ```
-grep -oPh '"client_email": "\K[^"]+' *.json > emails.txt
+$ grep -oPh '"client_email": "\K[^"]+' *.json > emails.txt
 ```
 - Unmount acounts folder
 ```
-cd -
+$ cd -
 ```
 Then add emails from emails.txt to Google Group, after that add Google Group to your Shared Drive and promote it to manager.
 
 **NOTE**: If you have created SAs in past from this script, you can also just re download the keys by running:
 ```
-python3 gen_sa_accounts.py --download-keys project_id
+$ python3 gen_sa_accounts.py --download-keys project_id
 ```
 
 </details>
@@ -369,7 +363,7 @@ python3 gen_sa_accounts.py --download-keys project_id
 
 - Run:
 ```
-python3 add_to_team_drive.py -d SharedTeamDriveSrcID
+$ python3 add_to_team_drive.py -d SharedTeamDriveSrcID
 ```
 </details>
 
@@ -411,15 +405,16 @@ Thanks to:
 <details>
     <summary><b>Click here for more details</b></summary>
     
-- [out386](https://github.com/out386) heavily inspired from Telegram Bot which is written in JS
-- [Izzy12](https://github.com/lzzy12/) for original repo
-- [Dank-del](https://github.com/Dank-del/) for base repo
-- [magneto261290](https://github.com/magneto261290/) for some features
-- [SVR666](https://github.com/SVR666/) for some features & fixes
-- [anasty17](https://github.com/anasty17) for some features & help
-- [breakdowns](https://github.com/breakdowns) for slam-aria-mirror-bot
-- [zevtyardt](https://github.com/zevtyardt) for some direct links
+- @out386 heavily inspired from Telegram Bot which is written in JS
+- @lzzy12 for original repo
+- @Dank-del for base repo
+- @magneto261290 for some features
+- @SVR666 for some features & fixes
+- @anasty17 for some features & help
+- @breakdowns for slam-aria-mirror-bot
+- @zevtyardt for some direct links
+- @vincreator for this
 
 </details>
 
-And many more people who aren't mentioned here, but may be found in [Contributors](https://github.com/vincreator/eunha/graphs/contributors).
+And many more people who aren't mentioned here, but may be found in [Contributors](https://github.com/mrclfd/euismirrorbot/graphs/contributors).
